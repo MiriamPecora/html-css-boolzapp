@@ -5,13 +5,12 @@
 }
 
 body {
-    background-color: bisque;
+    background-color: rgb(230, 195, 206);
 }
 
 /* UTILITY */
 
 /* LAYOUT */
-
 .container {
     max-width: 80%;
     background-color: aqua;
@@ -29,13 +28,28 @@ body {
 
 .col-70 {
     width: 70%;
-    background-color: lightgreen;
 }
 
-/* BG COLORS FOR THE BLOCKOUT */
+/* BG */
+.custom-bg{
+    background-image: url(./assets/img/mine.jpg);
+    width: 100%;
+    height: 100%;
+}
 
-.purple-bg {
-    background-color: purple;
+/* MARGIN */
+.m-messages{
+    margin: 60px 30px 526px 30px;
+}
+
+/* PADDING */
+.p-10{
+    padding: 10px;
+}
+
+/* CLASSES FOR THE BLOCKOUT */
+.orange-bg {
+    background-color: rgb(253, 124, 84);
 }
 
 .pink-bg{
@@ -48,4 +62,12 @@ body {
 
 .peach-bg{
     background-color: peachpuff;
+}
+
+.border-blockout{
+    border: 1px solid brown;
+}
+
+.h-90{
+    min-height: 90vh;
 }
