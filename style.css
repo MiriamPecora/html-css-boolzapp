@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+/* UTILITY */
+
+/* LAYOUT */
+
+.container {
+    max-width: 80%;
+    background-color: aqua;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+}
+
+.col-30{
+    width: 30%;
+    background-color: lightcoral;
+}
+
+.col-70 {
+    width: 70%;
+    background-color: lightgreen;
+}
+
+/* BG COLORS FOR THE BLOCKOUT */
+
+.purple-bg {
+    background-color: purple;
+}
+
+.pink-bg{
+    background-color: lightpink;
+}
+
+.sky-bg {
+    background-color: skyblue;
+}
+
+.peach-bg{
+    background-color: peachpuff;
+}
