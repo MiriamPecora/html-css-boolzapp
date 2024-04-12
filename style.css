@@ -7,7 +7,17 @@
 }
 
 body {
-    background-color: rgb(230, 195, 206);
+    background:linear-gradient(
+        to bottom,
+        rgb(16, 167, 121) 0%,
+        rgb(16, 167, 121) 15%,
+        rgb(230, 223, 209) 15%,
+        rgb(224, 223, 204) 100%
+        /* rgb(11, 112, 78) 0%, 
+        rgb(11, 112, 78) 20%, 
+        rgb(156, 155, 138) 20%
+        rgb(156, 155, 138) 100% */
+        );
     font-family: "Lato", sans-serif
 }
 
