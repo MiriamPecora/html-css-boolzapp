@@ -21,6 +21,10 @@ body {
     border-bottom: solid 1px rgb(238, 238, 238) ;
 }
 
+.border-radius{
+    border-radius: 10px;
+}
+
 /* LAYOUT */
 .container {
     max-width: 80%;
@@ -43,7 +47,13 @@ body {
 }
 
 /* MARGIN */
+.m-10{
+    margin-bottom: 10px ;
+}
 
+.mt-10{
+    margin-top: 10px;
+}
 
 /* PADDING */
 .p-20{
@@ -58,9 +68,17 @@ body {
     padding: 5px;
 }
 
+.p-messages{
+    padding: 50px 70px;
+}
+
 /* DISPLAY FLEX */
 .d-flex{
     display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
 }
 
 .justify-between{
@@ -135,24 +153,32 @@ h2 {
     color: grey;
 }
 
+.side-txt p {
+    color: rgb(170, 168, 168);
+    font-size: 14;
+}
 
+.arrow {
+    font-size: 20px;
+    color: rgb(180, 171, 171);
+    font-weight: bold;
+}
 
-/* CLASSES FOR THE BLOCKOUT */
-/* .orange-bg {
-    background-color: rgb(253, 124, 84);
-} */
+.sent {
+    background-color: rgb(200, 240, 200);
+    align-self:end;
+}
 
-/* .pink-bg{
-    background-color: lightpink;
-} */
+.received{
+    background-color: white;
+}
 
-/* .border-blockout{
-    border: 1px solid brown;
-} */
+.time {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 12px;
+}
 
-/* .h-90{
-    min-height: 90vh;
-} */
 
 /* DIMENSIONI */
 .h-690{
@@ -179,6 +205,10 @@ h2 {
 .w-100-input{
     min-width: calc(100% - 100px);
     height: 100%;
+}
+
+.w-55{
+    width: 55%;
 }
 
 .input-txt{
@@ -233,4 +263,30 @@ body {
 .right-side{
     display: none;
 }
+
+.icons {
+    display: none;
 }
+
+.w-100-input{
+    width: 100%;
+}
+}
+
+/* CLASSI PER BLOCKOUT*/
+/* .orange-bg {
+    background-color: rgb(253, 124, 84);
+} */
+
+/* .pink-bg{
+    background-color: lightpink;
+} */
+
+/* .border-blockout{
+    border: 1px solid brown;
+} */
+
+/* .h-90{
+    min-height: 90vh;
+} */
+
