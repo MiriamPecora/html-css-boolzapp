@@ -13,11 +13,20 @@ body {
 
 /* UTILITY */
 
+.overflow{
+    overflow-y:scroll;
+}
+
+.border-bottom{
+    border-bottom: solid 1px rgb(238, 238, 238) ;
+}
+
 /* LAYOUT */
 .container {
     max-width: 80%;
     background-color: aqua;
     margin: 20px auto;
+    max-height: 879px;
 }
 
 .row {
@@ -26,7 +35,7 @@ body {
 
 .col-35{
     width: 35%;
-    background-color: lightcoral;
+    background-color: rgb(255, 255, 255);
 }
 
 .col-65 {
@@ -34,13 +43,7 @@ body {
 }
 
 /* MARGIN */
-.m-messages{
-    margin: 60px 30px 526px 30px;
-}
 
-.mt-20{
-    margin-top: 20px;
-}
 
 /* PADDING */
 .p-20{
@@ -64,8 +67,20 @@ body {
     justify-content: space-between;
 }
 
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
 .gap-15{
     gap: 15px;
+}
+
+.no-shrink{
+    flex-shrink: 0;
 }
 
 /* BG */
@@ -85,10 +100,7 @@ body {
 
 /* IMG CUSTOMIZATION */
 .propics {
-    width: 70px;
-}
-
-.border-radius{
+    width: 55px;
     border-radius: 50%;
 }
 
@@ -98,7 +110,7 @@ body {
 }
 
 .border-white{
-    padding: 17px;
+    padding: 10px;
     background-color: white;
     border-radius: 50%;
 }
@@ -111,22 +123,114 @@ h2 {
 
 .side-txt{
     margin: 10px 0;
+    max-width: 100%;
+    max-height: 100%;
 }
+
+.txt-15{
+    font-size: 15px;
+}
+
+.grey-txt{
+    color: grey;
+}
+
+
 
 /* CLASSES FOR THE BLOCKOUT */
-.orange-bg {
+/* .orange-bg {
     background-color: rgb(253, 124, 84);
-}
+} */
 
-.pink-bg{
+/* .pink-bg{
     background-color: lightpink;
-}
+} */
 
-.border-blockout{
+/* .border-blockout{
     border: 1px solid brown;
-}
+} */
 
-.h-90{
+/* .h-90{
     min-height: 90vh;
+} */
+
+/* DIMENSIONI */
+.h-690{
+    height: 690px;
 }
 
+.h-70{
+    height: 70px;
+}
+
+.h-50{
+    height: 50px;
+}
+
+.input-height{
+    height: calc(100% - 15px);
+}
+
+.input-width{
+    width: calc(100% - 10px);
+    border: none;
+}
+
+.w-100-input{
+    min-width: calc(100% - 100px);
+    height: 100%;
+}
+
+.input-txt{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 20px;
+}
+
+#chat-viewport{
+    height: 740px
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media screen and (max-width: 992px){
+
+body {
+    background-color: rgb(3, 65, 65);
+}
+
+.chat-preview .side-txt, span {
+    display: none;
+}
+
+#notifications {
+    display: none;
+}
+
+#search-input{
+    display: none;
+}
+
+.col-35 .right-side {
+    display: none;
+}
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 576px){
+
+body {
+    background-color: firebrick;
+}
+
+.col-35 {
+    display: none;
+}
+
+.right-side{
+    display: none;
+}
+}
